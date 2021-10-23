@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+}
+section{
+    background-color:beige;
+    display: flex;
+}
+.name{
+    position: relative;
+    width: 80vh;
+    height: 100vh;
+    background-color: tomato;
+}
+.matis{
+    font-family: dharma-gothic-m, sans-serif;
+    font-size: 160px;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 60px;
+    left: 140px;
+}
+.matis>h1{
+    -webkit-text-stroke: 2px beige;
+    color: tomato;
+}
+.portfolio{
+    font-family: dharma-gothic-m, sans-serif;
+    font-size: 160px;
+    color: beige;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 180px;
+    left: -160px;
+}
+
+.pres{
+    background-color: beige;
+    width: 100%;
+    position: relative;
+}
+.burger{
+    height: 6px;
+    width: 40px;
+    background-color: tomato;
+    position: absolute;
+    top:40px;
+    right: 40px;
+}
+.burger::before{
+    content: '';
+    position: absolute;
+    background-color: tomato;
+    height: 6px;
+    width: 30px;
+    transform: translateY(12px);
+}

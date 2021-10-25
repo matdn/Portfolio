@@ -1,47 +1,66 @@
 *{
     margin:0;
     padding:0;
+    list-style-type: none;
 }
 section{
-    background-color:beige;
+    background-color:#FFEBE8;
     display: flex;
 }
 .name{
     position: relative;
-    width: 80vh;
+    width: 90vh;
     height: 100vh;
     background-color: tomato;
 }
 .matis{
     font-family: dharma-gothic-m, sans-serif;
-    font-size: 160px;
+    font-size: 140px;
     transform: rotate(-90deg);
     position: absolute;
     bottom: 60px;
-    left: 140px;
+    left: 190px;
+    transition: 2s;
 }
 .matis>h1{
-    -webkit-text-stroke: 2px beige;
+    -webkit-text-stroke: 3px #FFEBE8;
     color: tomato;
 }
 .portfolio{
     font-family: dharma-gothic-m, sans-serif;
-    font-size: 160px;
-    color: beige;
+    font-size: 170px;
+    color: #FFEBE8;
     transform: rotate(-90deg);
     position: absolute;
-    bottom: 180px;
+    bottom: 210px;
     left: -160px;
+    transition: 1.6s;
 }
-
 .pres{
-    background-color: beige;
+    background-color: #FFEBE8;
     width: 100%;
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 45% 55%;
+}
+.pres>nav{
+    font-family: dharma-gothic-m, sans-serif;
+    font-size: 160px;
+    grid-column: 1/4;
+    grid-row:2/3;
+    color: tomato;
+    text-align: end;
+    padding-right: 40px;
+}
+.FE{
+    font-size:200px;
+    -webkit-text-stroke: 3px #FF8A75;
+    color: #FFEBE8;
 }
 .burger{
-    height: 6px;
-    width: 40px;
+    height:6px;
+    width:40px;
     background-color: tomato;
     position: absolute;
     top:40px;
@@ -55,3 +74,43 @@ section{
     width: 30px;
     transform: translateY(12px);
 }
+.cross{
+    height: 6px;
+    width: 40px;
+    background-color: #FFEBE8;
+    position: absolute;
+    transform: rotate(45deg);
+    top:40px;
+    right: 40px;
+    visibility: hidden;
+}
+.cross::before{
+    content: '';
+    position: absolute;
+    background-color: #FFEBE8;
+    height: 6px;
+    width: 40px;
+    transform: rotate(90deg);
+}
+.hover{
+    background-color: tomato;
+}
+.span1{
+    height: 0%;
+    transition: 0.5s;
+    grid-column: 3/4;
+    grid-row:1/3;
+}
+.span2{
+    height: 0%;
+    transition: 1s;
+    grid-column: 2/3;
+    grid-row:1/3;
+}
+.span3{
+    height: 0%;
+    transition: 1.5s;
+    grid-column: 1/2;
+    grid-row:1/3;
+}
+

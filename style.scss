@@ -1,5 +1,6 @@
 @import "abstract/variables",
-        "abstract/mixins";
+        "abstract/mixins",
+        "component/3Dtitles.sass";
 
 *{
     margin:0;
@@ -9,26 +10,16 @@
 section{
     background-color:$color-primary;
     display: flex;
+    
 }
 .name{
     position: relative;
-    width: 90vh;
+    width: 70vh;
     height: 100vh;
     background-color: $color-secondary;
-}
-
-.matis{
-    font-family: $font-type;
-    font-size: 140px;
-    transform: rotate(-90deg);
-    position: absolute;
-    bottom: 60px;
-    left: 190px;
-    transition: 2s;
-    h1{
-        -webkit-text-stroke: 3px $color-primary;
-        color: $color-secondary;
-    }
+    display: flex;
+    justify-content: center;
+    
 }
 
 .portfolio{
@@ -37,9 +28,9 @@ section{
     color: $color-primary;
     transform: rotate(-90deg);
     position: absolute;
-    bottom: 210px;
-    left: -160px;
+    margin: auto;
     transition: 1.6s;
+    bottom:230px;
 }
 
 .pres{
@@ -48,7 +39,7 @@ section{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 45% 55%;
+    grid-template-rows: 25% 40% 35% ;
     .burger{
         height:6px;
         width:40px;
@@ -56,6 +47,7 @@ section{
         position: absolute;
         top:40px;
         right: 40px;
+        cursor: pointer;
         &::before{
             content: '';
             position: absolute;
@@ -87,14 +79,22 @@ section{
         font-family: $font-type;
         font-size: 160px;
         grid-column: 1/4;
-        grid-row:2/3;
+        grid-row:2/4;
         color: $color-third;
         text-align: end;
-        padding-right: 40px;
+        padding-right: 80px;
+        Ul>li{
+            margin: -30px;
+        }
         .FE{
-            font-size:200px;
+            font-size:230px;
             -webkit-text-stroke: 3px $color-third;
             color: $color-primary;
+            letter-spacing: 5px;
+        }
+        .NM{
+            font-size:200px;
+            color: $color-secondary;
         }
     }
     .hover{
@@ -104,62 +104,20 @@ section{
         height: 0%;
         transition: 0.5s;
         grid-column: 3/4;
-        grid-row:1/3;
+        grid-row:1/5;
     }
     .span2{
         height: 0%;
         transition: 1s;
         grid-column: 2/3;
-        grid-row:1/3;
+        grid-row:1/5;
     }
     .span3{
         height: 0%;
         transition: 1.5s;
         grid-column: 1/2;
-        grid-row:1/3;
+        grid-row:1/5;
     }
 }
-.About3D {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column-reverse;
-    grid-column: 1/3;
-    grid-row: 1/2;
-    visibility: hidden;
-    cursor: pointer;
-    
-.btn3d {
-    font-family: $font-type;
-    font-size: 95px;
-    position: relative;
-    width: $btn-width;
-    height: $btn-height;
-    perspective: $persp;
-    &:hover {
-        & > .btn__flip {
-            transform: rotateX(-90deg);
-        }
-    }
-    .btn__flip {
-        @include facet; 
-        transform-style: preserve-3d;
-        transform-origin: center bottom ($btn-height/2);
-        transition: transform 2s;
-        transform: rotateX(0deg);
-        .btn__flip--off {
-            @include facet;
-            transform: rotateX(0deg) translateZ($btn-height/2);
-            background: $color-secondary;
-            color: $color-primary;
-        }
-        .btn__flip--on {
-            @include facet;
-            transform: rotateX(90deg) translateZ($btn-height/2);
-            background: $color-primary;
-            color: $color-secondary;
-        }
-    }
-}
-}
+
 

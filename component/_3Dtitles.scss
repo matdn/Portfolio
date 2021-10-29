@@ -20,6 +20,7 @@
     perspective: $persp;
     
     
+    
     &:hover {
         & > .btn__flip {
             transform: rotateX(-90deg);
@@ -32,17 +33,21 @@
         transform-origin: center bottom ($btn-height/2);
         transition: transform 2s;
         transform: rotateX(0deg);
+        text-decoration:none; 
+        
         .btn__flip--off {
             @include facet;
             transform: rotateX(0deg) translateZ($btn-height/2);
             background: $color-secondary;
             color: $color-primary;
+            text-decoration:none; 
         }
         .btn__flip--on {
             @include facet;
             transform: rotateX(90deg) translateZ($btn-height/2);
             background: $color-primary;
             color: $color-secondary;
+            text-decoration:none; 
         }
     }
     }

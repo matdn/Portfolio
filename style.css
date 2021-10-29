@@ -31,6 +31,7 @@
   transform-origin: center bottom 50px;
   transition: transform 2s;
   transform: rotateX(0deg);
+  text-decoration: none;
 }
 .About3D .btn3d .btn__flip .btn__flip--off {
   position: absolute;
@@ -42,6 +43,7 @@
   transform: rotateX(0deg) translateZ(50px);
   background: #ff5233;
   color: #fff6f5;
+  text-decoration: none;
 }
 .About3D .btn3d .btn__flip .btn__flip--on {
   position: absolute;
@@ -53,10 +55,94 @@
   transform: rotateX(90deg) translateZ(50px);
   background: #fff6f5;
   color: #ff5233;
+  text-decoration: none;
 }
 
 .space {
   height: 50px;
+}
+
+.img {
+  position: relative;
+  grid-column: 6/7;
+  grid-row: 1/2;
+  max-width: 100%;
+}
+.img .logo {
+  height: 120px;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+.img .logo:hover {
+  transform: rotate(360deg);
+  transition-duration: 2s;
+}
+.img .fleche {
+  height: 70px;
+  position: absolute;
+  top: 45px;
+  left: 72px;
+}
+
+.burger {
+  height: 6px;
+  width: 40px;
+  background-color: #ff5233;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+.burger::before {
+  content: "";
+  position: absolute;
+  background-color: #ff5233;
+  height: 6px;
+  width: 40px;
+  transform: translateY(12px);
+}
+
+.cross {
+  height: 6px;
+  width: 40px;
+  background-color: #fff6f5;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 40px;
+  right: 40px;
+  visibility: hidden;
+}
+.cross::before {
+  content: "";
+  position: absolute;
+  background-color: #fff6f5;
+  height: 6px;
+  width: 40px;
+  transform: rotate(90deg);
+}
+
+nav {
+  font-family: dharma-gothic-m, sans-serif;
+  font-size: 200px;
+  grid-column: 1/4;
+  grid-row: 2/4;
+  color: #ff7d66;
+  text-align: end;
+  padding-right: 80px;
+}
+nav Ul > li {
+  margin: -30px;
+}
+nav .FE {
+  font-size: 200px;
+  -webkit-text-stroke: 3px #ff7d66;
+  color: #fff6f5;
+  letter-spacing: 5px;
+}
+nav .NM {
+  font-size: 200px;
+  color: #ff5233;
 }
 
 * {
@@ -97,63 +183,6 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 25% 40% 35%;
-}
-.pres .burger {
-  height: 6px;
-  width: 40px;
-  background-color: #ff5233;
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  cursor: pointer;
-}
-.pres .burger::before {
-  content: "";
-  position: absolute;
-  background-color: #ff5233;
-  height: 6px;
-  width: 30px;
-  transform: translateY(12px);
-}
-.pres .cross {
-  height: 6px;
-  width: 40px;
-  background-color: #fff6f5;
-  position: absolute;
-  transform: rotate(45deg);
-  top: 40px;
-  right: 40px;
-  visibility: hidden;
-}
-.pres .cross::before {
-  content: "";
-  position: absolute;
-  background-color: #fff6f5;
-  height: 6px;
-  width: 40px;
-  transform: rotate(90deg);
-}
-.pres nav {
-  font-family: dharma-gothic-m, sans-serif;
-  font-size: 160px;
-  grid-column: 1/4;
-  grid-row: 2/4;
-  color: #ff7d66;
-  text-align: end;
-  padding-right: 80px;
-}
-.pres nav Ul > li {
-  margin: -30px;
-}
-.pres nav .FE {
-  font-size: 230px;
-  -webkit-text-stroke: 3px #ff7d66;
-  color: #fff6f5;
-  letter-spacing: 5px;
-}
-.pres nav .NM {
-  font-size: 200px;
-  color: #ff5233;
 }
 .pres .hover {
   background-color: #ff5233;
@@ -206,14 +235,64 @@ section {
   align-items: center;
   grid-column: 3/6;
   grid-row: 2/4;
-  font-size: 60px;
-  font-family: Dharma Gothic E Thin;
+  font-size: 30px;
+  font-family: rift-soft, sans-serif;
   background-color: #ff7d66;
   color: #fff6f5;
   padding: 40px;
 }
+.container_about .text_pres mark {
+  background-color: #fff6f5;
+}
 
-mark {
+.second_container {
+  height: 100vh;
+  background-color: #fff6f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second_container .dev {
+  width: 40%;
+  height: 80%;
+  text-align: center;
+}
+.second_container .dev h1 {
+  text-align: center;
+  font-family: rift-soft, sans-serif;
+  font-weight: 700;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 60px;
+}
+.second_container .dev.front-end {
+  background-color: #fff6f5;
+  margin-right: 20px;
+}
+.second_container .dev.front-end h1 {
+  color: #ff7d66;
+}
+.second_container .dev.front-end p {
+  font-size: 30px;
+  font-family: rift-soft, sans-serif;
+  padding: 20px;
+}
+.second_container .dev.front-end mark {
+  background-color: #ff7d66;
+}
+.second_container .dev.back-end {
+  margin-left: 20px;
+  background-color: #ff7d66;
+}
+.second_container .dev.back-end h1 {
+  color: #fff6f5;
+}
+.second_container .dev.back-end p {
+  font-size: 30px;
+  font-family: rift-soft, sans-serif;
+  padding: 20px;
+}
+.second_container .dev.back-end mark {
   background-color: #fff6f5;
 }
 

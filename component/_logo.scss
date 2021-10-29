@@ -1,0 +1,22 @@
+.img{
+    position: relative;
+    grid-column: 6/7;
+    grid-row: 1/2;
+    max-width: 100%;
+    .logo{
+        height: 120px;
+        position: absolute;
+        top:20px;
+        left:50px;
+        &:hover{
+            transform: rotate(360deg);
+            transition-duration: 2s;
+        }
+    }
+    .fleche{
+        height:70px;
+        position: absolute;
+        top:45px;
+        left:72px;
+    }
+}

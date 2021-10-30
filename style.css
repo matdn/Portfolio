@@ -255,7 +255,7 @@ section {
 .second_container .dev {
   width: 40%;
   height: 80%;
-  text-align: center;
+  text-align: start;
 }
 .second_container .dev h1 {
   text-align: center;
@@ -294,6 +294,27 @@ section {
 }
 .second_container .dev.back-end mark {
   background-color: #fff6f5;
+}
+
+.third_container {
+  background-color: #fff6f5;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.third_container img {
+  height: 90vh;
+  margin-right: 30px;
+}
+.third_container .description_img {
+  width: 40%;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.third_container .description_img p {
+  font-size: 30px;
+  font-family: rift-soft, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

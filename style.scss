@@ -183,3 +183,138 @@ section{
 }
 
 
+/*----------PROJECTS----------*/
+
+.container_projects{
+    background-color: $color-primary;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 35% 25% 25% 15%;
+    grid-template-rows: 35% 50% 15%;
+    .img{
+        grid-column: 4/5;
+    }
+    h1{
+        font-family: $font-type;
+        color: $color-third;
+        grid-column: 1/2;
+        grid-row: 1/3;
+        font-size: 380px;
+        text-align: start;
+        padding-left:20px;
+        margin-left:50px;
+        &.jects{
+            padding-top: 50px;
+            grid-row: 2/3;
+            font-size: 245px;
+            color: $color-secondary;
+            //transform: rotateY(180deg);
+        }
+    }
+    .projects_intro{
+        grid-column: 2/5;
+        grid-row: 2/3;
+        background-color: $color-third;
+        height: 100%;
+        width: 100%;
+        
+        p{
+            font-family: rift-soft, sans-serif;
+            color:$color-primary;
+            font-size: 30px;
+            padding: 20px;
+            padding-left:40px;
+        }
+    }
+}
+.second_container_projects{
+    background-color: $color-primary;
+    
+    .rohlavache{
+        background-color: $color-third;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 120px;
+        img{
+            height: 400px;
+            margin-right: 20px;
+            padding:30px;
+        }
+        .rlv_pres{
+            height: 350px;
+            width: 40%;
+            margin-left: 20px;
+            color: $color-primary;
+            font-family: $font-type;
+            
+            h1{
+                font-family: Nazare;
+                font-size: 60px;
+            }
+            p{
+                font-family: rift-soft, sans-serif;
+                font-size: 30px;
+            }
+            button{
+                margin-top: 30px;
+                font-family: rift-soft, sans-serif;
+                font-size: 20px;
+                width: 120px;
+                height: 45px;
+                border: solid 2px $color-primary;
+                background-color: $color-third;
+                color: $color-primary;
+                &:hover{
+                    background-color: $color-primary;
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+    .paranoidbroco{
+        background-color: $color-primary;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 120px;
+        margin-top: 40px;
+        img{
+            height: 400px;
+            margin-right: 70px;
+            padding:30px;
+        }
+        .rlv_pres{
+            height: 350px;
+            width: 40%;
+            margin-left: 20px;
+            color: $color-secondary;
+            font-family: $font-type;
+            
+            h1{
+                font-family: eds-market-regular-slant, sans-serif;
+                font-size: 60px;
+                
+            }
+            p{
+                font-family: rift-soft, sans-serif;
+                font-size: 30px;
+            }
+            button{
+                margin-top: 30px;
+                font-family: rift-soft, sans-serif;
+                font-size: 20px;
+                width: 120px;
+                height: 45px;
+                border: solid 2px $color-secondary;
+                background-color: $color-primary;
+                color: $color-secondary;
+                &:hover{
+                    background-color: $color-secondary;
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
+

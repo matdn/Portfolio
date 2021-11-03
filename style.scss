@@ -165,19 +165,21 @@ section{
     display: flex;
     justify-content: center;
     padding:40px;
-    
     img{
         height: 90vh;
         margin-right: 30px;
     }
     .description_img{
         width: 40%;
-        margin-left: 30px;
+        margin-left: 40px;
         display: flex;
         align-items: center;
         p{
             font-size: 30px;
             font-family: rift-soft, sans-serif;
+        } 
+        mark{
+            background-color: $color-third;
         }
     }
 }
@@ -270,6 +272,13 @@ section{
                     color: $color-secondary;
                 }
             }
+            a{
+                text-decoration: none;
+                color: $color-primary;
+                &:hover{
+                    color: $color-secondary;
+                }
+            }
         }
     }
     .paranoidbroco{
@@ -308,13 +317,51 @@ section{
                 height: 45px;
                 border: solid 2px $color-secondary;
                 background-color: $color-primary;
-                color: $color-secondary;
+                
                 &:hover{
                     background-color: $color-secondary;
-                    color: $color-primary;
+                    
+                }
+                a{
+                    text-decoration: none;
+                    color: $color-third;
+                    &:hover{
+                        color: $color-primary;
+                    }
                 }
             }
         }
     }
 }
 
+/*----------Roh_La_Vache----------*/
+
+header{
+    display:grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 300px;
+    h1{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        font-family: Nazare;
+        font-size: 80px;
+        color: $color-secondary;
+    }
+    .img{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    max-width: 100vh;
+    img{
+        perspective: 20px;
+        height: 800px;
+        padding: 40px;
+    }
+}

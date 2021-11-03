@@ -29,7 +29,7 @@
   align-items: center;
   transform-style: preserve-3d;
   transform-origin: center bottom 50px;
-  transition: transform 2s;
+  transition: transform 1s;
   transform: rotateX(0deg);
   text-decoration: none;
 }
@@ -308,13 +308,16 @@ section {
 }
 .third_container .description_img {
   width: 40%;
-  margin-left: 30px;
+  margin-left: 40px;
   display: flex;
   align-items: center;
 }
 .third_container .description_img p {
   font-size: 30px;
   font-family: rift-soft, sans-serif;
+}
+.third_container .description_img mark {
+  background-color: #ff7d66;
 }
 
 /*----------PROJECTS----------*/
@@ -403,6 +406,13 @@ section {
   background-color: #fff6f5;
   color: #ff5233;
 }
+.second_container_projects .rohlavache .rlv_pres a {
+  text-decoration: none;
+  color: #fff6f5;
+}
+.second_container_projects .rohlavache .rlv_pres a:hover {
+  color: #ff5233;
+}
 .second_container_projects .paranoidbroco {
   background-color: #fff6f5;
   display: flex;
@@ -439,11 +449,48 @@ section {
   height: 45px;
   border: solid 2px #ff5233;
   background-color: #fff6f5;
-  color: #ff5233;
 }
 .second_container_projects .paranoidbroco .rlv_pres button:hover {
   background-color: #ff5233;
+}
+.second_container_projects .paranoidbroco .rlv_pres button a {
+  text-decoration: none;
+  color: #ff7d66;
+}
+.second_container_projects .paranoidbroco .rlv_pres button a:hover {
   color: #fff6f5;
+}
+
+/*----------Roh_La_Vache----------*/
+header {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 300px;
+}
+header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-family: Nazare;
+  font-size: 80px;
+  color: #ff5233;
+}
+header .img {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  max-width: 100vh;
+}
+.slider img {
+  perspective: 20px;
+  height: 800px;
+  padding: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

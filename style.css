@@ -61,7 +61,7 @@
 }
 
 .space {
-  height: 70px;
+  height: 100px;
 }
 
 .img {
@@ -404,15 +404,15 @@ section .bandereau .name .portfolio {
   }
 }
 /*----------ABOUT ME----------*/
-.about_me, .project {
+.about_me, .project, .contact {
   max-width: 100%;
   background-color: #839B96;
 }
-.about_me h2, .project h2 {
+.about_me h2, .project h2, .contact h2 {
   color: #FED32D;
   font-family: roboto;
 }
-.about_me header, .project header {
+.about_me header, .project header, .contact header {
   background-image: url(img/header_background.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -423,11 +423,11 @@ section .bandereau .name .portfolio {
   justify-content: flex-end;
   align-items: center;
 }
-.about_me header h2, .project header h2 {
+.about_me header h2, .project header h2, .contact header h2 {
   width: 50%;
   font-size: 40px;
 }
-.about_me .main_header, .project .main_header {
+.about_me .main_header, .project .main_header, .contact .main_header {
   position: absolute;
   top: 0;
   z-index: 1000;
@@ -437,7 +437,7 @@ section .bandereau .name .portfolio {
   display: flex;
   align-items: flex-start;
 }
-.about_me .main_header nav, .project .main_header nav {
+.about_me .main_header nav, .project .main_header nav, .contact .main_header nav {
   display: flex;
   height: 100px;
   width: 100%;
@@ -445,26 +445,26 @@ section .bandereau .name .portfolio {
   justify-content: space-between;
   padding: 30px 7%;
 }
-.about_me .main_header img, .project .main_header img {
+.about_me .main_header img, .project .main_header img, .contact .main_header img {
   height: 60px;
 }
-.about_me .main_header .title, .project .main_header .title {
+.about_me .main_header .title, .project .main_header .title, .contact .main_header .title {
   font-family: dharma-gothic-m, sans-serif;
   font-style: italic;
   font-weight: 700;
   font-size: 70px;
 }
-.about_me .main_header a, .project .main_header a {
+.about_me .main_header a, .project .main_header a, .contact .main_header a {
   text-decoration: none;
   height: auto;
 }
-.about_me .main_header ul, .project .main_header ul {
+.about_me .main_header ul, .project .main_header ul, .contact .main_header ul {
   display: flex;
   gap: 50px;
   width: 80%;
   justify-content: end;
 }
-.about_me .main_header ul li, .project .main_header ul li {
+.about_me .main_header ul li, .project .main_header ul li, .contact .main_header ul li {
   color: #FED32D;
   font-family: roboto;
   font-size: 25px;
@@ -619,6 +619,10 @@ section .bandereau .name .portfolio {
   100% {
     transform: perspective(1000px) rotateX(360deg) rotate(15deg);
   }
+}
+/*----------CONTACT----------*/
+.contact {
+  background-color: #1D2624;
 }
 
 /*# sourceMappingURL=style.css.map */

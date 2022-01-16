@@ -24,6 +24,8 @@
     top:40px;
     right: 40px;
     visibility: hidden;
+    z-index: 500;
+    
     &::before{
         content: '';
         position: absolute;
@@ -31,6 +33,9 @@
         height: 6px;
         width: 40px;
         transform: rotate(90deg);
+    }
+    &:hover{
+        cursor: pointer;
     }
 }
 nav{

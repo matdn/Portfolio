@@ -5,56 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/jmi5kfn.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" defer></script>
+    
     <link rel="stylesheet" href="style.css">
     <title>Matis Portfolio</title>
 </head>
-<body>
+<body class="index_body">
+    <div class="span">
+        <div id="span1" class="span_div span1"></div>
+        <div id="span2" class="span_div span2"></div>
+        <div id="span3" class="span_div span3"></div>
+        <div id="cross" class="cross">
+        </div>
+        <div class="About3D" id="about">
+            <div class="btn3d">
+                <div class="btn__flip about">
+                    <a href="about_me.html" class="btn__flip--off">ABOUT ME</a>
+                    <a href="about_me.html" class="btn__flip--on">ABOUT ME</a>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="btn3d">
+                <div class="btn__flip projects">
+                    <a href="projects.html" class="btn__flip--off"> PROJECTS</a>
+                    <a href="projects.html" class="btn__flip--on"> PROJECTS</a>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="btn3d">
+                <div class="btn__flip projects">
+                    <a class="btn__flip--off">CONTACT ME</a>
+                    <a class="btn__flip--on">CONTACT ME</a>
+                </div>
+            </div>
+        </div>           
+    </div>
     <section>
-        <div class="name">
-            <div class="portfolio" id="portfolio">
-                <h1>PORTFOLIO</h1>
+        <div class="bandereau">
+            <div class="name">
+                <div class="portfolio" id="portfolio">
+                    <h1>PORTFOLIO</h1>
+                </div>
+                <div id="social_networks" class="social_networks">
+                    <div class="line"></div>
+                    <nav>
+                        <ul>
+                            <a class="" href=""> <li> GIT HUB ➔</li> </a>
+                            <a class="" href=""> <li> LINKEDIN ➔</li> </a>
+                            <a class="" href=""> <li> INSTAGRAM ➔</li> </a>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-        <div class="pres" id="pres">
-            <div id="burger" class="burger"></div>
-            <nav>
-                <ul>
-                    <li class="NM">Matis DENE</li>
-                    <li class="FE">FRONT-END</li>
-                    <li class="DV">DEVELOPER student</li>
-                </ul>
-            </nav>
-            <span class="hover span1" id="span1"></span>
-            <span class="hover span2" id="span2"></span>
-            <span class="hover span3" id="span3">
-                <div class="cross" id="cross"></div>
-            </span>
-            <div class="About3D" id="about">
-                <div class="btn3d">
-                    <div class="btn__flip about">
-                        <a href="about_me.html" class="btn__flip--off">ABOUT ME</a>
-                        <a href="about_me.html" class="btn__flip--on">ABOUT ME</a>
-                    </div>
+        <div class="border">
+            <div class="pres" id="pres">
+                <div class="textslider">
+                    <h2>Frontend creative developer - UX / UI designer - Student - Frontend developer - 
+                        Frontend creative developer - UX / UI designer - Student - Frontend developer - </h2>
+                    <div class="line"></div>
                 </div>
-                <div class="space"></div>
-                <div class="btn3d">
-                    <div class="btn__flip projects">
-                        <a href="projects.html" class="btn__flip--off"> PROJECTS</a>
-                        <a href="projects.html" class="btn__flip--on"> PROJECTS</a>
-                    </div>
+                <div class="img">
+                    <div class="circl1"></div>
+                    <div class="circl2"></div>
+                    <img src="img/accueil_profil.jpg" alt="">
                 </div>
-                <div class="space"></div>
-                <div class="btn3d">
-                    <div class="btn__flip projects">
-                        <a class="btn__flip--off">CONTACT ME</a>
-                        <a class="btn__flip--on">CONTACT ME</a>
-                        
+                <div class="click">
+                    <div class="absolute">
+                        <div id="button" class="relative">
+                            <img  class="rotate2 img2" src="img/logo click roboto 2.png" alt="">
+                            <img id="click_div" class="rotate1 img1" src="img/logo click roboto 1.png" alt=""> 
+                        </div>
                     </div>
-                </div>
-            </div>            
+                </div> 
+            </div>
         </div>
-    </section>
         
+    </section>
+    <script type="text/javascript" src="script.js"></script>
 </body>
-<script type="text/javascript" src="script.js"></script>
 </html>

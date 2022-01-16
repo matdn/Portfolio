@@ -249,7 +249,7 @@ section{
         font-family: roboto;
     }
     header{
-        background-image: url(img/header_background.jpg);
+        background-image: url(img/header_background.png);
         background-size: cover;
         background-repeat: no-repeat;
         height: 100vh;
@@ -347,6 +347,11 @@ section{
         }
     }
 }
+.last_text{
+    text-align: center;
+    font-size: 40px;
+    padding: 7% 0;
+}
 /*----------PROJECTS----------*/
 .project{
     display: flex;
@@ -441,7 +446,6 @@ section{
         }
     }
 }
-
 @keyframes animate{
     0%{
         transform: perspective(1000px) rotateX(0deg) rotate(15deg);

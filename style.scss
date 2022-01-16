@@ -258,7 +258,7 @@ section{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        
+        position: fixed;
         h2{
             width: 50%;
             font-size: 40px;
@@ -273,6 +273,8 @@ section{
         background: linear-gradient(to bottom, $color-primary, transparent 100%);
         display: flex;
         align-items: flex-start;
+        position: fixed;
+        z-index: 20;
         nav{
             display: flex;
             height: 100px;
@@ -319,6 +321,8 @@ section{
     background-size: cover;
     padding: 100px 10% 0 10%;
     gap: 7%;
+    position: absolute;
+    top: 0;
     h2{
         color: $color-secondary;
         font-family: roboto;

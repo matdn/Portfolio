@@ -216,7 +216,8 @@ section .border {
   left: 25px;
   z-index: 3;
 }
-section .bandereau {
+
+.bandereau {
   width: 25%;
   height: 100%;
   display: flex;
@@ -226,38 +227,38 @@ section .bandereau {
   z-index: 300;
   overflow: hidden;
 }
-section .bandereau .social_networks {
+.bandereau .social_networks {
   transition: 1.2s;
 }
-section .bandereau .name {
+.bandereau .name {
   transform: rotate(-90deg);
   background-color: #FED32D;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-section .bandereau .name .line {
+.bandereau .name .line {
   height: 2px;
   width: 100%;
   background-color: #303F3C;
   margin-bottom: 20px;
   margin-top: -20px;
 }
-section .bandereau .name a {
+.bandereau .name a {
   text-decoration: none;
 }
-section .bandereau .name ul {
+.bandereau .name ul {
   display: flex;
   gap: 30px;
   justify-content: flex-start;
 }
-section .bandereau .name ul li {
+.bandereau .name ul li {
   white-space: nowrap;
   font-family: "tepeno", sans-serif;
   font-size: 16px;
   color: #303F3C;
 }
-section .bandereau .name .portfolio {
+.bandereau .name .portfolio {
   font-family: dharma-gothic-m, sans-serif;
   font-style: italic;
   font-size: 10rem;
@@ -413,9 +414,10 @@ section .bandereau .name .portfolio {
   font-family: roboto;
 }
 .about_me header, .project header, .contact header {
-  background-image: url(img/header_background.png);
+  background-image: url(img/header_background.webp);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   padding: 0 7%;
   padding-right: 100px;
@@ -436,6 +438,7 @@ section .bandereau .name .portfolio {
   background: linear-gradient(to bottom, #303F3C, transparent 100%);
   display: flex;
   align-items: flex-start;
+  position: fixed;
 }
 .about_me .main_header nav, .project .main_header nav, .contact .main_header nav {
   display: flex;
@@ -469,6 +472,7 @@ section .bandereau .name .portfolio {
   font-family: roboto;
   font-size: 25px;
   font-weight: 600;
+  text-decoration: underline;
 }
 
 .section1 {
@@ -623,6 +627,70 @@ section .bandereau .name .portfolio {
 /*----------CONTACT----------*/
 .contact {
   background-color: #1D2624;
+}
+
+@media screen and (max-width: 800px) {
+  .index_body {
+    display: none;
+  }
+
+  .index_body_responsive {
+    display: block;
+    height: 100vh;
+    z-index: -20;
+  }
+
+  .portfolio h1 {
+    font-size: 230px;
+  }
+
+  .bandereau {
+    width: 100%;
+    background-color: #FED32D;
+    position: fixed;
+    z-index: -20;
+  }
+
+  .sectionPresProjects {
+    background-color: #303F3C;
+    z-index: 20;
+    padding: 0px 7%;
+    height: 1600px;
+  }
+  .sectionPresProjects p {
+    color: #FED32D;
+    font-family: "poppins";
+    font-size: 30px;
+    font-weight: 600;
+    padding: 60px 0 0 0;
+  }
+  .sectionPresProjects .img {
+    height: 300px;
+    margin-top: 60px;
+  }
+  .sectionPresProjects .circl1 {
+    width: 140px;
+    height: 140px;
+    z-index: 0;
+    left: 20px;
+  }
+  .sectionPresProjects .circl2 {
+    z-index: 30;
+  }
+  .sectionPresProjects img {
+    z-index: 20;
+  }
+  .sectionPresProjects .projects {
+    margin: 150px 0 300px 0;
+  }
+  .sectionPresProjects .projects h2 {
+    font-family: dharma-gothic-m, sans-serif;
+    color: #FED32D;
+    font-style: oblique;
+    font-weight: 900;
+    font-size: 230px;
+    transform: rotate(90deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

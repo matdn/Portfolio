@@ -63,54 +63,54 @@ section{
         left: 25px;
         z-index: 3;
     }
-    .bandereau{
-        width: 25%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+}
+.bandereau{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-third;
+    z-index: 300;
+    overflow: hidden;
+    .social_networks{
+        transition: 1.2s;
+    }
+    .name{
+        transform: rotate(-90deg);
         background-color: $color-third;
-        z-index: 300;
-        overflow: hidden;
-        .social_networks{
-            transition: 1.2s;
+        display: flex; 
+        flex-direction: column;
+        justify-content:center;
+        .line{
+            height: 2px;
+            width: 100%;
+            background-color: $color-primary;
+            margin-bottom: 20px;
+            margin-top: -20px;
         }
-        .name{
-            transform: rotate(-90deg);
-            background-color: $color-third;
-            display: flex; 
-            flex-direction: column;
-            justify-content:center;
-            .line{
-                height: 2px;
-                width: 100%;
-                background-color: $color-primary;
-                margin-bottom: 20px;
-                margin-top: -20px;
-            }
-            a{
-                text-decoration: none
-            }
-            ul{
-                display: flex;
-                gap: 30px;
-                justify-content: flex-start;
-                li{
-                    white-space: nowrap;
-                    font-family: 'tepeno', sans-serif;
-                    font-size: 16px;
-                    color: $color-primary;
-                }
-            }
-            .portfolio{
-                font-family:$font-type;
-                font-style: italic;
-                font-size: 10rem;
+        a{
+            text-decoration: none
+        }
+        ul{
+            display: flex;
+            gap: 30px;
+            justify-content: flex-start;
+            li{
+                white-space: nowrap;
+                font-family: 'tepeno', sans-serif;
+                font-size: 16px;
                 color: $color-primary;
-                transition: 1.6s;
-                h1{
-                    // text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
-                }
+            }
+        }
+        .portfolio{
+            font-family:$font-type;
+            font-style: italic;
+            font-size: 10rem;
+            color: $color-primary;
+            transition: 1.6s;
+            h1{
+                // text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
             }
         }
     }
@@ -175,6 +175,9 @@ section{
             -webkit-text-stroke: 1px;
             -webkit-text-stroke-color: $color-secondary;
             animation: slidetext 10s infinite linear;
+            &:hover{
+                
+            }
         }
         .line{
             height: 4px;
@@ -249,15 +252,17 @@ section{
         font-family: roboto;
     }
     header{
-        background-image: url(img/header_background.png);
+        background-image: url(img/header_background.webp);
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         height: 100vh;
         padding: 0 7%;
         padding-right: 100px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        
         
         h2{
             width: 50%;
@@ -273,6 +278,7 @@ section{
         background: linear-gradient(to bottom, $color-primary, transparent 100%);
         display: flex;
         align-items: flex-start;
+        position: fixed;
         nav{
             display: flex;
             height: 100px;
@@ -304,8 +310,8 @@ section{
                 font-family: roboto;
                 font-size: 25px;
                 font-weight: 600;
+                text-decoration: underline;
             }
-            
         }
     }
 }
@@ -458,5 +464,67 @@ section{
 /*----------CONTACT----------*/
 .contact{
     background-color: #1D2624;
-    
+}
+@media screen and (max-width: 800px) {
+    .index_body {
+    display: none;
+    }
+    .index_body_responsive{
+        
+        display: block;
+        height: 100vh;
+        z-index: -20;
+    }
+    .portfolio{
+        h1{
+            font-size: 230px;
+        }
+    }
+    .bandereau{
+        width: 100%;
+        background-color: #FED32D;
+        position: fixed;
+        z-index: -20;
+    }
+    .sectionPresProjects{
+        background-color: $color-primary;
+        z-index: 20;
+        padding: 0px 7%;
+        height: 1600px;
+        p{
+            color: #FED32D;
+            font-family: 'poppins';
+            font-size: 30px;
+            font-weight: 600;
+            padding: 60px 0 0 0;
+        }
+        .img{
+            height: 300px;
+            margin-top: 60px;
+            
+        }
+        .circl1{
+            width: 140px;
+            height: 140px;
+            z-index: 0;
+            left: 20px;
+        }
+        .circl2{
+            z-index: 30;
+        }
+        img{
+            z-index: 20;
+        }
+        .projects{
+            margin: 150px 0 300px 0;
+            h2{
+                font-family: $font-type;
+                color: #FED32D;
+                font-style: oblique;
+                font-weight: 900;
+                font-size: 230px;
+                transform: rotate(90deg);
+            }
+        }
+    }
 }

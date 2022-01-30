@@ -15,6 +15,9 @@
     grid-template-columns: 25% 75%;
     grid-template-rows: 1fr;
 }
+.responsive{
+    display: none;
+}
 .span{
     position: absolute;
     width: 100%;
@@ -452,6 +455,7 @@ section{
         }
     }
 }
+
 @keyframes animate{
     0%{
         transform: perspective(1000px) rotateX(0deg) rotate(15deg);
@@ -469,8 +473,10 @@ section{
     .index_body {
     display: none;
     }
+    .responsive{
+        display: block;
+    }
     .index_body_responsive{
-        
         display: block;
         height: 100vh;
         z-index: -20;

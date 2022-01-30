@@ -163,6 +163,10 @@ nav .NM {
   grid-template-rows: 1fr;
 }
 
+.responsive {
+  display: none;
+}
+
 .span {
   position: absolute;
   width: 100%;
@@ -632,6 +636,10 @@ section .border {
 @media screen and (max-width: 800px) {
   .index_body {
     display: none;
+  }
+
+  .responsive {
+    display: block;
   }
 
   .index_body_responsive {

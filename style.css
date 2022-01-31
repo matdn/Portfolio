@@ -633,9 +633,11 @@ section .border {
   background-color: #1D2624;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 400px) and (max-width: 500px) {
   .index_body {
     display: none;
+    padding: 0;
+    margin: 0;
   }
 
   .responsive {
@@ -709,7 +711,7 @@ section .border {
     position: absolute;
     right: 0;
     left: 0;
-    gap: 72px;
+    gap: 65px;
     display: inline-flex;
     transform: translateX(0%);
     transition: transform 0.3s ease-out;
@@ -722,14 +724,213 @@ section .border {
     justify-content: center;
   }
   .sectionPresProjects .projects .slide img {
-    opacity: 0.9;
+    opacity: 0.8;
+    width: 350px;
   }
   .sectionPresProjects .projects .grabbing {
     cursor: grabbing;
   }
   .sectionPresProjects .projects .grabbing img {
-    transform: scale(0.9);
+    transform: scale(0.95);
     opacity: 1;
+  }
+}
+@media screen and (min-width: 385px) and (max-width: 399px) {
+  .index_body {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .responsive {
+    display: block;
+  }
+
+  .index_body_responsive {
+    display: block;
+    height: 100vh;
+    z-index: -20;
+  }
+
+  .portfolio h1 {
+    font-size: 230px;
+  }
+
+  .bandereau {
+    width: 100%;
+    background-color: #FED32D;
+    position: fixed;
+    z-index: -20;
+  }
+
+  .sectionPresProjects {
+    background-color: #303F3C;
+    z-index: 20;
+    padding: 0px 7%;
+    height: auto;
+    overflow: hidden;
+  }
+  .sectionPresProjects p {
+    color: #FED32D;
+    font-family: "poppins";
+    font-size: 30px;
+    font-weight: 600;
+    padding: 60px 0 0 0;
+  }
+  .sectionPresProjects .img {
+    height: 300px;
+    margin-top: 60px;
+  }
+  .sectionPresProjects .circl1 {
+    width: 140px;
+    height: 140px;
+    z-index: 0;
+    left: 20px;
+  }
+  .sectionPresProjects .circl2 {
+    z-index: 30;
+  }
+  .sectionPresProjects img {
+    z-index: 20;
+  }
+  .sectionPresProjects .projects {
+    margin: 150px 0 150px 0;
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sectionPresProjects .projects h2 {
+    font-family: dharma-gothic-m, sans-serif;
+    color: #FED32D;
+    font-style: oblique;
+    font-weight: 900;
+    font-size: 260px;
+    transform: rotate(90deg);
+  }
+  .sectionPresProjects .projects #slider-container {
+    position: absolute;
+    right: 0;
+    left: 0;
+    gap: 65px;
+    display: inline-flex;
+    transform: translateX(0%);
+    transition: transform 0.3s ease-out;
+    cursor: grab;
+  }
+  .sectionPresProjects .projects .slide {
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sectionPresProjects .projects .slide img {
+    opacity: 0.8;
+    width: 327px;
+  }
+  .sectionPresProjects .projects .grabbing {
+    cursor: grabbing;
+  }
+  .sectionPresProjects .projects .grabbing img {
+    transform: scale(0.95);
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 380px) {
+  .index_body {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .responsive {
+    display: block;
+  }
+
+  .index_body_responsive {
+    display: block;
+    height: 100vh;
+    z-index: -20;
+    width: 100%;
+  }
+
+  .portfolio h1 {
+    font-size: 230px;
+  }
+
+  .bandereau {
+    width: 100%;
+    background-color: #FED32D;
+    position: fixed;
+    z-index: -20;
+  }
+
+  .sectionPresProjects {
+    background-color: #303F3C;
+    z-index: 20;
+    padding: 0px 7%;
+    height: auto;
+    overflow: hidden;
+  }
+  .sectionPresProjects p {
+    color: #FED32D;
+    font-family: "poppins";
+    font-size: 30px;
+    font-weight: 600;
+    padding: 60px 0 0 0;
+  }
+  .sectionPresProjects .img {
+    height: 300px;
+    margin-top: 60px;
+  }
+  .sectionPresProjects .circl1 {
+    width: 140px;
+    height: 140px;
+    z-index: 0;
+    left: 20px;
+  }
+  .sectionPresProjects .circl2 {
+    z-index: 30;
+  }
+  .sectionPresProjects img {
+    z-index: 20;
+  }
+  .sectionPresProjects .projects {
+    margin: 150px 0 150px 0;
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sectionPresProjects .projects h2 {
+    font-family: dharma-gothic-m, sans-serif;
+    color: #FED32D;
+    font-style: oblique;
+    font-weight: 900;
+    font-size: 260px;
+    transform: rotate(90deg);
+  }
+  .sectionPresProjects .projects #slider-container {
+    position: absolute;
+    right: 0;
+    left: 0;
+    gap: 55px;
+    display: inline-flex;
+    transform: translateX(0%);
+    transition: transform 0.3s ease-out;
+    cursor: grab;
+  }
+  .sectionPresProjects .projects #slider-container .slide {
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sectionPresProjects .projects #slider-container .slide img {
+    opacity: 0.8;
+    width: 320px;
   }
 }
 

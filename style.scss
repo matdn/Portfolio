@@ -469,7 +469,8 @@ section{
 .contact{
     background-color: #1D2624;
 }
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 400px) {
     .index_body {
     display: none;
     }
@@ -541,7 +542,7 @@ section{
                 position: absolute;
                 right: 0;
                 left: 0;
-                gap: 90px;
+                gap: 72px;
                 display: inline-flex;
                 transform: translateX(0%);
                 transition: transform 0.3s ease-out;
@@ -566,3 +567,4 @@ section{
         }
     }
 }
+

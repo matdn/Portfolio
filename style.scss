@@ -559,6 +559,11 @@ section{
                 img{
                     opacity: 0.8;
                     width: 350px;
+                    -webkit-user-select: none;
+                    -khtml-user-select: none;
+                    -moz-user-select: none;
+                    -o-user-select: none;
+                    user-select: none;
                 }
             }
             .grabbing{
@@ -660,6 +665,11 @@ section{
                 img{
                     opacity: 0.8;
                     width: 327px;
+                    -webkit-user-select: none;
+                    -khtml-user-select: none;
+                    -moz-user-select: none;
+                    -o-user-select: none;
+                    user-select: none;
                 }
             }
             .grabbing{
@@ -761,6 +771,11 @@ section{
                         img{
                             opacity: 0.8;
                             width: 320px;
+                            -webkit-user-select: none;
+                    -khtml-user-select: none;
+                    -moz-user-select: none;
+                    -o-user-select: none;
+                    user-select: none;
                         }
                     }
                 }

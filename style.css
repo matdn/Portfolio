@@ -663,7 +663,8 @@ section .border {
     background-color: #303F3C;
     z-index: 20;
     padding: 0px 7%;
-    height: 1600px;
+    height: auto;
+    overflow: hidden;
   }
   .sectionPresProjects p {
     color: #FED32D;
@@ -689,15 +690,46 @@ section .border {
     z-index: 20;
   }
   .sectionPresProjects .projects {
-    margin: 150px 0 300px 0;
+    margin: 150px 0 150px 0;
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .sectionPresProjects .projects h2 {
     font-family: dharma-gothic-m, sans-serif;
     color: #FED32D;
     font-style: oblique;
     font-weight: 900;
-    font-size: 230px;
+    font-size: 260px;
     transform: rotate(90deg);
+  }
+  .sectionPresProjects .projects #slider-container {
+    position: absolute;
+    right: 0;
+    left: 0;
+    gap: 90px;
+    display: inline-flex;
+    transform: translateX(0%);
+    transition: transform 0.3s ease-out;
+    cursor: grab;
+  }
+  .sectionPresProjects .projects .slide {
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sectionPresProjects .projects .slide img {
+    opacity: 0.9;
+  }
+  .sectionPresProjects .projects .grabbing {
+    cursor: grabbing;
+  }
+  .sectionPresProjects .projects .grabbing img {
+    transform: scale(0.9);
+    opacity: 1;
   }
 }
 

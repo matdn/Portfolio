@@ -496,7 +496,8 @@ section{
         background-color: $color-primary;
         z-index: 20;
         padding: 0px 7%;
-        height: 1600px;
+        height: auto;
+        overflow: hidden;
         p{
             color: #FED32D;
             font-family: 'poppins';
@@ -522,14 +523,45 @@ section{
             z-index: 20;
         }
         .projects{
-            margin: 150px 0 300px 0;
+            margin: 150px 0 150px 0;
+            height: 600px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             h2{
                 font-family: $font-type;
                 color: #FED32D;
                 font-style: oblique;
                 font-weight: 900;
-                font-size: 230px;
+                font-size: 260px;
                 transform: rotate(90deg);
+            }
+            #slider-container{
+                position: absolute;
+                right: 0;
+                left: 0;
+                gap: 90px;
+                display: inline-flex;
+                transform: translateX(0%);
+                transition: transform 0.3s ease-out;
+                cursor: grab;
+            }
+            .slide{
+                max-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    opacity: 0.9;
+                }
+            }
+            .grabbing{
+                cursor: grabbing;
+                img{
+                    transform: scale(0.9);
+                    opacity: 1;
+                }
             }
         }
     }

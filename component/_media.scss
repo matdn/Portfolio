@@ -1,0 +1,116 @@
+@mixin media{
+    .index_body {
+        display: none;
+        padding: 0;
+        margin: 0;
+        }
+        .responsive{
+            display: block;
+        }
+        .index_body_responsive{
+            display: block;
+            height: 100vh;
+            z-index: -20;
+        }
+        .portfolio{
+            h1{
+                font-size: 230px;
+            }
+        }
+        .bandereau{
+            width: 100%;
+            background-color: #FED32D;
+            position: fixed;
+            z-index: -20;
+        }
+        .sectionPresProjects{
+            background-color: $color-primary;
+            z-index: 20;
+            padding: 0px 7%;
+            height: auto;
+            overflow: hidden;
+            p{
+                color: #FED32D;
+                font-family: 'poppins';
+                font-size: 30px;
+                font-weight: 600;
+                padding: 60px 0 0 0;
+            }
+            .img{
+                height: 300px;
+                margin-top: 60px;
+                
+            }
+            .circl1{
+                width: 140px;
+                height: 140px;
+                z-index: 0;
+                left: 20px;
+            }
+            .circl2{
+                z-index: 30;
+            }
+            img{
+                z-index: 20;
+            }
+            .projects{
+                margin: 150px 0 150px 0;
+                height: 600px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h2{
+                    font-family: $font-type;
+                    color: #FED32D;
+                    font-style: oblique;
+                    font-weight: 900;
+                    font-size: 260px;
+                    transform: rotate(90deg);
+                }
+                h3{
+                    font-family: $font-type;
+                    font-size: 120px;
+                    font-weight: 900;
+                    color: #FED32D;
+                    position: absolute;
+                    z-index: 1000;
+                }
+                #slider-container{
+                    position: absolute;
+                    right: 0;
+                    left: 0;
+                    gap: 65px;
+                    display: inline-flex;
+                    transform: translateX(0%);
+                    transition: transform 0.3s ease-out;
+                    cursor: grab;
+                }
+                .slide{
+                    max-height: 100vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    img{
+                        opacity: 0.8;
+                        width: 327px;
+                        z-index: 1000;
+                        -webkit-user-select: none;
+                        -khtml-user-select: none;
+                        -moz-user-select: none;
+                        -o-user-select: none;
+                        user-select: none;
+                    }
+                }
+                .grabbing{
+                    cursor: grabbing;
+                    img{
+                        transform: scale(0.95);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+

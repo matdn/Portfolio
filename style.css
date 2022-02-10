@@ -155,6 +155,23 @@ nav .NM {
   list-style-type: none;
 }
 
+body::-webkit-scrollbar {
+  width: 15px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #303F3C;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FED32D;
+  /* color of the scroll thumb */
+  border-radius: 6px;
+  /* roundness of the scroll thumb */
+}
+
 .index_body {
   height: 100vh;
   position: relative;
@@ -476,6 +493,8 @@ section .border {
   font-family: roboto;
   font-size: 25px;
   font-weight: 600;
+}
+.about_me .main_header ul li:hover, .project .main_header ul li:hover, .contact .main_header ul li:hover {
   text-decoration: underline;
 }
 
@@ -707,6 +726,14 @@ section .border {
     font-size: 260px;
     transform: rotate(90deg);
   }
+  .sectionPresProjects .projects h3 {
+    font-family: dharma-gothic-m, sans-serif;
+    font-size: 120px;
+    font-weight: 900;
+    color: #FED32D;
+    position: absolute;
+    z-index: 1000;
+  }
   .sectionPresProjects .projects #slider-container {
     position: absolute;
     right: 0;
@@ -813,6 +840,14 @@ section .border {
     font-weight: 900;
     font-size: 260px;
     transform: rotate(90deg);
+  }
+  .sectionPresProjects .projects h3 {
+    font-family: dharma-gothic-m, sans-serif;
+    font-size: 120px;
+    font-weight: 900;
+    color: #FED32D;
+    position: absolute;
+    z-index: 1000;
   }
   .sectionPresProjects .projects #slider-container {
     position: absolute;
@@ -922,6 +957,14 @@ section .border {
     font-weight: 900;
     font-size: 260px;
     transform: rotate(90deg);
+  }
+  .sectionPresProjects .projects h3 {
+    font-family: dharma-gothic-m, sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    color: #FED32D;
+    position: absolute;
+    z-index: 1000;
   }
   .sectionPresProjects .projects #slider-container {
     position: absolute;

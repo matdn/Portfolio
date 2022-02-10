@@ -2,12 +2,26 @@
         "abstract/mixins",
         "component/3Dtitles",
         "component/logo",
+        "component/media",
         "component/menu burger";
 *{
     margin:0;
     padding:0;
     list-style-type: none;
 }
+body::-webkit-scrollbar {
+    width: 15px; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: $color-primary; /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: $color-secondary;/* color of the scroll thumb */
+    border-radius: 6px; /* roundness of the scroll thumb */
+    
+  }
 .index_body{
     height: 100vh;
     position: relative;
@@ -26,10 +40,12 @@
     grid-row:1/2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    
 }
 .span_div{
     background-color: $color-secondary;
     z-index: 20;
+    
 }
 .span1{
     height: 0%;
@@ -313,6 +329,9 @@ section{
                 font-family: roboto;
                 font-size: 25px;
                 font-weight: 600;
+                
+            }
+            li:hover{
                 text-decoration: underline;
             }
         }
@@ -540,6 +559,14 @@ section{
                 font-size: 260px;
                 transform: rotate(90deg);
             }
+            h3{
+                font-family: $font-type;
+                font-size: 120px;
+                font-weight: 900;
+                color: #FED32D;
+                position: absolute;
+                z-index: 1000;
+            }
             #slider-container{
                 position: absolute;
                 right: 0;
@@ -645,6 +672,14 @@ section{
                 font-weight: 900;
                 font-size: 260px;
                 transform: rotate(90deg);
+            }
+            h3{
+                font-family: $font-type;
+                font-size: 120px;
+                font-weight: 900;
+                color: #FED32D;
+                position: absolute;
+                z-index: 1000;
             }
             #slider-container{
                 position: absolute;
@@ -753,6 +788,14 @@ section{
                     font-weight: 900;
                     font-size: 260px;
                     transform: rotate(90deg);
+                }
+                h3{
+                    font-family: $font-type;
+                    font-size: 60px;
+                    font-weight: 500;
+                    color: #FED32D;
+                    position: absolute;
+                    z-index: 1000;
                 }
                 #slider-container{
                     position: absolute;

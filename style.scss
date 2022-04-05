@@ -125,7 +125,7 @@ section{
         .portfolio{
             font-family:$font-type;
             font-style: italic;
-            font-size: 10rem;
+            font-size: 10rem;   
             color: $color-primary;
             transition: 1.6s;
             h1{
@@ -186,7 +186,7 @@ section{
         overflow: hidden;
         white-space: nowrap;
         h2{
-            font-family: 'Roboto Condensed';
+            font-family: 'Roboto';
             font-size: 100px;
             font-weight: 600;
             transform: translateX(-100%);

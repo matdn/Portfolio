@@ -1,68 +1,45 @@
-// window.addEventListener("scroll", (event) => {
-//   let scrollY = this.scrollY;
-//   var section1 = document.getElementById("firstSection");
-//   var text = document.getElementById("text");
-//   var h2_2 = document.querySelector(".h2_2");
+var click = document.getElementById("click_div")
+var pres = document.getElementById("pres")
+var span1 = document.getElementById("span1")
+var span2 = document.getElementById("span2")
+var span3 = document.getElementById("span3")
+var portfolio = document.getElementById("portfolio")
+var cross = document.getElementById("cross")
+var about = document.getElementById("about")
+var social_networks = document.getElementById("social_networks")
+var li1 = document.getElementById("li1")
+var li2 = document.getElementById("li2")
+var li3 = document.getElementById("li3")
+var li4 = document.getElementById("li4")
+var img1 = document.getElementById("img1")
+var img2 = document.getElementById("img2")
+var img3 = document.getElementById("img3")
+var img4 = document.getElementById("img4")
 
+click.addEventListener('click',function(){
+    span1.style.height = "100%"
+    span2.style.height = "100%"
+    span3.style.height = "100%"
+    about.style.visibility = "visible"
+    portfolio.style.transform = "translateX(1000px)"
+    social_networks.style.transform = "translateX(-1000px)"
+    cross.style.visibility = "visible"
+    about.style.transitionDelay = "1.2s"
+})
+cross.addEventListener('click',function(){
+    span1.style.height = "0%"
+    span2.style.height = "0%"
+    span3.style.height = "0%"
+    about.style.visibility = "hidden"
+    portfolio.style.transform = "translateX(0px)"
+    social_networks.style.transform = "translateX(0px)"
+    cross.style.visibility = "hidden"
+    about.style.transitionDelay = "0s"
+})
+console.log('yay')
 
-//   if(scrollY>1100){
-//     section1.style.display = "none";
-//   }
-//   else{
-//     section1.style.display = "block";
-//   }
-//   if(scrollY<2222){
-//     text.style.display = "none"
-//   }else{
-//     text.style.display = "block"
-//   }
-//   if(scrollY<2333){
-//     h2_2.style.display = "none"
-//   }else{
-//     h2_2.style.display = "block"
-//   }
-// });
-
-// function numberEvolv (){
-//   var numberEvolv = " ";
-//   var scrollY = window.scrollY;
-//   var numberH2 = document.querySelector(".number")
-//   numberH2.innerHTML = numberEvolv
-// }
-// numberEvolv();
-
-// // gsap.registerPlugin(ScrollTrigger);
-// //   gsap.to(".bretagneImage",{
-// //     scrollTrigger: {
-// //         trigger: ".secondPart",
-// //         start: "900",
-// //         // markers : true,
-// //         end: "1400",
-// //         scrub:1,
-// //         toggleActions: "restart none none none"
-// //     },
-// //     scale : 1.2,
-// //     width : 1200,
-// //     y: 50
-// //   })
-// //   gsap.to(".h2_1",{
-// //     scrollTrigger: {
-// //         start: "2200",
-// //         markers : true,
-// //         end: "3000",
-// //         scrub:1,
-// //         toggleActions: "restart none none none"
-// //     },
-// //     y : -260,
-// //   })
-// //   gsap.to(".h2_2",{
-// //     scrollTrigger: {
-// //         start: "2200",
-// //         end: "3500",
-// //         scrub:1,
-// //         toggleActions: "restart none none none"
-// //     },
-// //     y : -380,
-// //   })
-  
-  
+li1.addEventListener('mouseover', function(){
+    console.log('oui')
+    img1.classList.add("block");
+   
+})

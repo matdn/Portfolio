@@ -43,7 +43,7 @@ nav{
     font-size: 200px;
     grid-column: 1/4;
     grid-row:2/4;
-    color: $color-third;
+    color: $color-secondary;
     text-align: end;
     padding-right: 80px;
     Ul>li{
@@ -51,7 +51,7 @@ nav{
     }
     .FE{
         font-size:200px;
-        -webkit-text-stroke: 3px $color-third;
+        -webkit-text-stroke: 3px $color-secondary;
         color: $color-primary;
         letter-spacing: 5px;
     }
